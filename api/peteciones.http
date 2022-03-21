@@ -1,0 +1,25 @@
+
+### peticion para obtener todos los datos
+http://localhost:4000/
+
+### peticion para enviar una nueva nota
+POST http://localhost:4000/newNota
+Content-Type: application/json
+
+{
+    "title": "hola mundo",
+    "description": "esto es una prueba"
+}
+
+### peticion para editar una nota
+
+PUT http://localhost:4000/editNota/6230da7fe9c6d27fd011cc25
+Content-Type: application/json
+
+{
+    "title": "nuevo titulo 2",
+    "description": "nueva descripcion 2"
+}
+
+###eliminar notas
+DELETE http://localhost:4000/deleteNota/6230d8e20284bcb7f2c4c02a
